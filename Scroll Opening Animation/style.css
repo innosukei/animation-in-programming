@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.content1 {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    color: black;
+}
+
+.container:active {
+    animation: scroll-reveal 2s;
+}
+
+@keyframes scroll-reveal {
+    0% {
+        width: 300px;
+        height: 0px
+    }
+
+    100% {
+        width: 300px;
+        height: 300px;
+    }
+}
